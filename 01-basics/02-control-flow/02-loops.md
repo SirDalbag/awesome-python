@@ -13,7 +13,7 @@ for fruit in fruits:
     print(fruit)
 
 # Итерация по диапазону чисел
-for i in range(5):
+for i in range(5): # range(start, stop, step)
     print(i)
 ```
 
