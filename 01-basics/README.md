@@ -5,11 +5,11 @@
 ## Темы
 
 - Переменные и типы данных
-  - [Переменные](01-variables-and-datatypes/variables.md)
-  - [Типы данных](01-variables-and-datatypes/datatypes.md)
+  - [Переменные](01-variables-and-datatypes/01-variables.md)
+  - [Типы данных](01-variables-and-datatypes/02-datatypes.md)
 - Управляющие конструкции
-  - [Условные операторы](02-control-flow/if-else.md)
-  - [Циклы](02-control-flow/loops.md)
+  - [Условные операторы](02-control-flow/01-if-else.md)
+  - [Циклы](02-control-flow/02-loops.md)
 - Функции
   - [Определение функций](03-functions/defining-functions.md)
   - [Лямбда функции](03-functions/lambda-functions.md)
