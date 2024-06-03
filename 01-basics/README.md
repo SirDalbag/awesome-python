@@ -11,8 +11,8 @@
   - [Условные операторы](02-control-flow/01-if-else.md)
   - [Циклы](02-control-flow/02-loops.md)
 - Функции
-  - [Определение функций](03-functions/defining-functions.md)
-  - [Лямбда функции](03-functions/lambda-functions.md)
+  - [Определение функций](03-functions/01-defining-functions.md)
+  - [Лямбда функции](03-functions/02-lambda-functions.md)
 - Модули и пакеты
-  - [Импорт модулей](04-modules-and-packages/importing-modules.md)
-  - [Создание пакетов](04-modules-and-packages/creating-packages.md)
+  - [Импорт модулей](04-modules-and-packages/01-importing-modules.md)
+  - [Создание пакетов](04-modules-and-packages/02-creating-packages.md)
