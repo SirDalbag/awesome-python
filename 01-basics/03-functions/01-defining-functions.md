@@ -100,3 +100,44 @@ def print_info(**kwargs):
 
 print_info(name="Alice", age=30)  # Ожидаемый вывод: name: Alice, age: 30
 ```
+
+## Возврат значений
+
+Функции могут возвращать значения с помощью ключевого слова `return`.
+
+
+```python
+def add(a, b):
+    return a + b
+
+result = add(3, 5)
+print(result)  # Ожидаемый вывод: 8
+```
+
+## Множественное возвращение значений
+
+Функции в Python могут возвращать несколько значений, используя кортежи.
+
+```python
+def get_full_name():
+    first_name = "John"
+    last_name = "Doe"
+    return first_name, last_name
+
+first, last = get_full_name()
+print(first)  # Ожидаемый вывод: John
+print(last)  # Ожидаемый вывод: Doe
+```
+
+## Возвращение None
+
+Если функция не имеет явного оператора `return`, она возвращает `None`.
+
+```python
+def greet(name):
+    print(f"Hello, {name}!")
+
+result = greet("Alice")
+print(result)  # Ожидаемый вывод: None
+```
+
