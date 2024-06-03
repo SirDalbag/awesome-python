@@ -73,3 +73,30 @@ def greet(name="World"):
 greet()  # Ожидаемый вывод: Hello, World!
 greet("Alice")  # Ожидаемый вывод: Hello, Alice!
 ```
+
+## Произвольное количество аргументов
+
+Иногда полезно передавать функции произвольное количество аргументов. Это можно сделать с помощью `*args` и `**kwargs`.
+
+* `*args`
+
+Позволяет передавать произвольное количество позиционных аргументов.
+
+```python
+def sum_all(*args):
+    return sum(args)
+
+print(sum_all(1, 2, 3))  # Ожидаемый вывод: 6
+```
+
+* `**kwargs`
+
+Позволяет передавать произвольное количество именованных аргументов.
+
+```python
+def print_info(**kwargs):
+    for key, value in kwargs.items():
+        print(f"{key}: {value}")
+
+print_info(name="Alice", age=30)  # Ожидаемый вывод: name: Alice, age: 30
+```
