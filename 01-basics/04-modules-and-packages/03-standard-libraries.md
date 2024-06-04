@@ -77,3 +77,47 @@ choices = ['apple', 'banana', 'cherry']
 print(random.choice(choices))
 ```
 
+### Модуль re
+
+Модуль `re` предоставляет функции для работы с регулярными выражениями.
+
+```python
+import re
+
+# Поиск всех вхождений шаблона в строке
+pattern = r'\d+'
+string = 'There are 123 apples and 45 bananas'
+matches = re.findall(pattern, string)
+print(matches)  # Ожидаемый вывод: ['123', '45']
+
+# Замена всех вхождений шаблона в строке
+new_string = re.sub(r'\d+', 'many', string)
+print(new_string)  # Ожидаемый вывод: There are many apples and many bananas
+```
+
+### Модуль collections
+
+Модуль `collections` предоставляет специализированные контейнерные типы данных, такие как `Counter`, `deque`, `defaultdict`, `OrderedDict`, и `namedtuple`.
+
+```python
+from collections import Counter
+
+# Подсчет частоты элементов в списке
+fruits = ['apple', 'banana', 'apple', 'cherry', 'banana', 'banana']
+counter = Counter(fruits)
+print(counter)  # Ожидаемый вывод: Counter({'banana': 3, 'apple': 2, 'cherry': 1})
+```
+
+### Модуль itertools
+
+Модуль `itertools` предоставляет функции для создания итераторов для эффективного перебора данных.
+
+```python
+import itertools
+
+# Создание декартова произведения
+colors = ['red', 'green', 'blue']
+sizes = ['S', 'M', 'L']
+product = list(itertools.product(colors, sizes))
+print(product) # Ожидаемый вывод: [('red', 'S'), ('red', 'M'), ('red', 'L'), ('green', 'S'), ('green', 'M'), ('green', 'L'), ('blue', 'S'), ('blue', 'M'), ('blue', 'L')]
+```
