@@ -41,3 +41,39 @@ print(os.name)  # Ожидаемый вывод: имя операционной
 print(os.getcwd())  # Ожидаемый вывод: текущий рабочий каталог
 ```
 
+### Модуль json
+
+Модуль `json` используется для работы с данными в формате `JSON (JavaScript Object Notation)`.
+
+```python
+import json
+
+# Преобразование Python объекта в JSON строку
+data = {'name': 'Alice', 'age': 30}
+json_data = json.dumps(data)
+print(json_data)  # Ожидаемый вывод: {"name": "Alice", "age": 30}
+
+# Преобразование JSON строки в Python объект
+json_string = '{"name": "Bob", "age": 25}'
+data = json.loads(json_string)
+print(data)  # Ожидаемый вывод: {'name': 'Bob', 'age': 25}
+```
+
+### Модуль random
+
+Модуль `random` предоставляет функции для генерации случайных чисел.
+
+```python
+import random
+
+# Генерация случайного числа от 1 до 10
+print(random.randint(1, 10))
+
+# Генерация случайного числа с плавающей точкой от 0 до 1
+print(random.random())
+
+# Выбор случайного элемента из списка
+choices = ['apple', 'banana', 'cherry']
+print(random.choice(choices))
+```
+
