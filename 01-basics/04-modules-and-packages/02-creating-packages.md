@@ -53,4 +53,4 @@ print(foo())  # Ожидаемый вывод: foo from module1
 print(bar())  # Ожидаемый вывод: bar from module2
 ```
 
-- [Использование стандартных библиотек](04-modules-and-packages/03-standard-libraries.md)
+- [Использование стандартных библиотек](03-standard-libraries.md)
