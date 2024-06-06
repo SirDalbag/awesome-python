@@ -28,3 +28,8 @@ print(even_squares)  # {0, 4, 16, 36, 64}
 
 Включения также могут включать условные выражения, что делает их еще более мощными.
 
+```python
+# Cписок, где 'small' если число < 3, иначе 'large'
+sizes = ["small" if x < 3 else "large" for x in range(5)]
+print(sizes)  # ['small', 'small', 'small', 'large', 'large']
+```
