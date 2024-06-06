@@ -11,4 +11,15 @@ squares = [x**2 for x in range(1, 6)]
 print(squares)  # [1, 4, 9, 16, 25]
 ```
 
+# Set Comprehensions
 
+Похожи на list comprehensions, но возвращают множество, что гарантирует уникальность элементов.
+
+```python
+{выражение for элемент in итерируемый if условие}
+```
+
+```python
+even_squares = {x**2 for x in range(10) if x % 2 == 0}
+print(even_squares)  # {0, 4, 16, 36, 64}
+```
