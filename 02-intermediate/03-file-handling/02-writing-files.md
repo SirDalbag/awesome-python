@@ -9,3 +9,23 @@
 * `'w'`: запись (удаляет содержимое файла, если он существует, или создает новый файл).
 * `'a'`: добавление (добавляет данные в конец файла).
 * `'x'`: создание нового файла (если файл уже существует, возникает ошибка).
+
+## Запись строк в файл
+
+* `write()`: записывает строку в файл.
+
+```python
+with open('example.txt', 'w') as file:
+    file.write("Hello, World!\n")
+    file.write("This is a test file.\n")
+```
+
+## Запись нескольких строк
+
+* `writelines()`: записывает список строк в файл.
+
+```python
+lines = ["First line\n", "Second line\n", "Third line\n"]
+with open('example.txt', 'w') as file:
+    file.writelines(lines)
+```
