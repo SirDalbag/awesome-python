@@ -60,3 +60,32 @@ try:
 except IOError:
     print("Error writing to file.")
 ```
+
+## Пример комплексной записи в файл
+
+```python
+filename = 'example.txt'
+
+try:
+    # Запись строк в файл
+    with open(filename, 'w') as file:
+        file.write("Hello, World!\n")
+        file.write("This is a test file.\n")
+
+    # Запись списка строк
+    lines = ["First line\n", "Second line\n", "Third line\n"]
+    with open(filename, 'w') as file:
+        file.writelines(lines)
+
+    # Добавление данных в файл
+    with open(filename, 'a') as file:
+        file.write("Appending a new line.\n")
+
+    # Запись двоичных данных
+    data = bytes([104, 101, 108, 108, 111])  # 'hello' в байтах
+    with open('example.bin', 'wb') as file:
+        file.write(data)
+
+except IOError:
+    print(f"Error writing to file {filename}.")
+```
