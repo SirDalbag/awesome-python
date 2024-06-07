@@ -29,3 +29,34 @@ lines = ["First line\n", "Second line\n", "Third line\n"]
 with open('example.txt', 'w') as file:
     file.writelines(lines)
 ```
+
+## Добавление данных в файл
+
+Используйте режим `'a'` для добавления данных в конец файла.
+
+```python
+with open('example.txt', 'a') as file:
+    file.write("Appending a new line.\n")
+```
+
+## Запись двоичных данных
+
+Для записи двоичных данных используйте режим `'wb'`.
+
+```python
+data = bytes([104, 101, 108, 108, 111])  # 'hello' в байтах
+with open('example.bin', 'wb') as file:
+    file.write(data)
+```
+
+## Обработка ошибок при записи файлов
+
+Важно обрабатывать возможные ошибки при записи файлов с помощью конструкции `try...except`.
+
+```python
+try:
+    with open('example.txt', 'w') as file:
+        file.write("Hello, World!\n")
+except IOError:
+    print("Error writing to file.")
+```
